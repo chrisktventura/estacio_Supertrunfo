@@ -32,7 +32,7 @@ Este projeto é o primeiro desafio do jogo **Super Trunfo de Países**. O objeti
 1. Clone o repositório:
 
    ```bash
-   git clone [https://github.com/seu-usuario/super-trunfo-cidades.git](https://github.com/chrisktventura/estacio_Supertrunfo)
+   git clone https://github.com/chrisktventura/estacio_Supertrunfo
    cd estacio_Supertrunfo
 Compile o código:
 
