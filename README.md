@@ -1,7 +1,3 @@
-📘 README.md
-markdown
-Copiar
-Editar
 # Super Trunfo de Países - Nível Novato 🃏🌍
 
 Este projeto é o primeiro desafio do jogo **Super Trunfo de Países**. O objetivo deste nível é construir a base do jogo, permitindo o **cadastro de duas cartas** com informações sobre cidades.
@@ -63,9 +59,7 @@ Apenas entrada, armazenamento e saída de dados
 Código bem indentado e com nomes de variáveis significativos
 
 💡 Exemplo de saída
-makefile
-Copiar
-Editar
+
 --- Carta 1 ---
 Estado: A
 Código: A01
@@ -74,6 +68,7 @@ População: 12325000
 Área: 1521.11 km²
 PIB: 699.28 bilhões de reais
 Número de Pontos Turísticos: 50
+
 
 --- Carta 2 ---
 Estado: B
