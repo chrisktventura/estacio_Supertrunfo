@@ -1,100 +1,101 @@
-# Super Trunfo de Países - Nível Novato 🃏🌍
+# 🃏 Super Trunfo de Cidades (em C)
 
-Este projeto é o primeiro desafio do jogo **Super Trunfo de Países**. O objetivo deste nível é construir a base do jogo, permitindo o **cadastro de duas cartas** com informações sobre cidades.
-
-## 🧠 Conceitos praticados
-
-- Leitura de dados via teclado (`scanf`)
-- Armazenamento de dados em variáveis
-- Impressão formatada com `printf`
-- Manipulação de strings e tipos básicos em C
-- Organização e exibição estruturada de dados
+Este projeto é um jogo simples estilo **Super Trunfo**, desenvolvido em linguagem **C**, onde o usuário cadastra cartas representando cidades brasileiras, com atributos como população, área, PIB e mais. Ao longo das fases, novas funcionalidades são adicionadas até a batalha final entre cartas!
 
 ---
 
-## 📋 O que o programa faz
+## 🔰 Nível Básico — Cadastro de Cartas
 
-- Permite que o usuário insira os dados de **duas cartas** com as seguintes informações:
-  - Estado (letra de A a H)
-  - Código da carta (ex: A01, B03)
-  - Nome da cidade
-  - População
-  - Área (em km²)
-  - PIB (em bilhões de reais)
-  - Número de pontos turísticos
+O programa permite ao usuário cadastrar **duas cartas** com as seguintes informações:
 
-- Exibe os dados inseridos de forma clara e organizada.
+- Estado (letra de A a H)
+- Código da carta (ex: A01)
+- Nome da cidade
+- População (int)
+- Área (float)
+- PIB (float, em bilhões)
+- Número de pontos turísticos (int)
+
+Depois da entrada, o programa **exibe todos os dados organizadamente**.
 
 ---
 
-## 🧪 Como executar
+## 🧮 Nível Intermediário — Cálculo de Atributos
 
-1. Clone o repositório:
+Nesta fase, o programa foi aprimorado para **calcular e exibir automaticamente**:
 
-   ```bash
-   git clone https://github.com/chrisktventura/estacio_Supertrunfo
-   cd estacio_Supertrunfo
-Compile o código:
+- **Densidade populacional** = população / área
+- **PIB per capita** = PIB / população
+
+Esses valores são exibidos com **duas casas decimais**, e ajudam a analisar melhor as cidades.
+
+---
+
+## ⚔️ Nível Avançado — Batalha de Cartas
+
+Nesta última fase, as cartas entram em **modo de batalha**:
+
+### 💥 Atributos Comparados:
+- População
+- Área
+- PIB
+- Pontos Turísticos
+- Densidade Populacional *(quem tiver menor vence!)*
+- PIB per Capita
+- **Super Poder**
+
+### 🧠 Cálculo do Super Poder:
+```c
+SuperPoder = população + área + PIB + pontos turísticos + PIB per capita + (1 / densidade populacional)
+Todos os valores são convertidos corretamente para float para precisão.
+
+🧪 Saída de Comparação:
+Para cada atributo, o programa mostra quem venceu:
+
+yaml
+Copiar
+Editar
+População: Carta 1 venceu (1)
+Área: Carta 1 venceu (0)
+PIB: Carta 1 venceu (1)
+Pontos Turísticos: Carta 1 venceu (1)
+Densidade Populacional: Carta 1 venceu (1)
+PIB per Capita: Carta 1 venceu (0)
+Super Poder: Carta 1 venceu (1)
+🛠️ Tecnologias Utilizadas
+Linguagem C
+
+Compilador GCC
+
+Terminal / Prompt de comando
+
+✅ Como Executar
+Clone o repositório:
 
 bash
 Copiar
 Editar
+git clone https://github.com/chrisktventura/estacio_Supertrunfo.git
+cd super-trunfo-cidades
+Compile o programa:
+
+nginx
+Copiar
+Editar
 gcc super_trunfo.c -o super_trunfo
-Execute o programa:
+Execute:
 
 bash
 Copiar
 Editar
 ./super_trunfo
-🗂 Estrutura
-super_trunfo.c: Código-fonte principal do projeto
+📚 Aprendizados
+Manipulação de structs em C
 
-README.md: Este arquivo com instruções do projeto
+Entrada e saída de dados via terminal
 
-🚧 Regras do desafio
-Sem uso de if, for, while ou qualquer estrutura de decisão/repetição
+Conversões de tipos (float, unsigned long int)
 
-Apenas entrada, armazenamento e saída de dados
+Lógica de comparação
 
-Código bem indentado e com nomes de variáveis significativos
-
-💡 Exemplo de saída
-
---- Carta 1 ---
-
-Estado: A
-
-Código: A01
-
-Nome da Cidade: São Paulo
-
-População: 12325000
-
-Área: 1521.11 km²
-
-PIB: 699.28 bilhões de reais
-
-Número de Pontos Turísticos: 50
-
-
---- Carta 2 ---
-
-Estado: B
-
-Código: B02
-
-Nome da Cidade: Rio de Janeiro
-
-População: 6748000
-
-Área: 1200.25 km²
-
-PIB: 300.50 bilhões de reais
-
-Número de Pontos Turísticos: 30
-
-🔗 Licença
-Este projeto está licenciado sob a MIT License.
-
-✨ Autor
-Feito com dedicação por Christopher Ventura. 🚀
+Operadores relacionais
