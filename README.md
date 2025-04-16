@@ -73,8 +73,7 @@ Terminal / Prompt de comando
 Clone o repositório:
 
 bash
-Copiar
-Editar
+
 git clone https://github.com/chrisktventura/estacio_Supertrunfo.git
 cd super-trunfo-cidades
 Compile o programa:
@@ -82,13 +81,12 @@ Compile o programa:
 nginx
 Copiar
 Editar
-gcc super_trunfo.c -o super_trunfo
+gcc estacio_Supertrunfo.c -o estacio_Supertrunfo
 Execute:
 
 bash
-Copiar
-Editar
-./super_trunfo
+
+./estacio_Supertrunfo
 📚 Aprendizados
 Manipulação de structs em C
 
